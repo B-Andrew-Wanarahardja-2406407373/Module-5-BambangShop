@@ -56,14 +56,14 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [:D] Commit: `Implement add function in Subscriber repository.`
     -   [:D] Commit: `Implement list_all function in Subscriber repository.`
     -   [:D] Commit: `Implement delete function in Subscriber repository.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
+    -   [:D] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
 -   **STAGE 2: Implement services and controllers**
     -   [:D] Commit: `Create Notification service struct skeleton.`
     -   [:D] Commit: `Implement subscribe function in Notification service.`
     -   [:D] Commit: `Implement subscribe function in Notification controller.`
     -   [:D] Commit: `Implement unsubscribe function in Notification service.`
     -   [:D] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
+    -   [:D] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
     -   [:D] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
     -   [:D] Commit: `Implement notify function in Notification service to notify each Subscriber.`
@@ -84,5 +84,10 @@ This is the place for you to write reflections:
 3. Not gonna lie, i'm confused by this question. I was under the impression that the singleton pattern means there's that singular instance inside a class that can be accessed by any instance of that class. and this DashMap fits that description. So asking if we still need DashMap or if we can implement the Singleton pattern instead, which implies only one can be chosen, makes me confused as i think both are implemented already. My lack of understanding aside, we probably still need DashMap to make it thread safe.
 
 #### Reflection Publisher-2
+1. I think it's to avoid the model being complicated. If everything is in a single place, then it would be big. By separating them, it becomes easier to categorize them based on their more specific jobs. Easier to maintain, easier to test.
+
+2. Again, large code, harder to maintain, harder to test. Everything from business logic, the data structure of the object, all the way to data storage would be in a single place, making it a lot more complex.
+
+3. A bit. well, i tested with the given data to test if the program works, mostly. But i haven't really explored enough to say what i'm interested in.
 
 #### Reflection Publisher-3
