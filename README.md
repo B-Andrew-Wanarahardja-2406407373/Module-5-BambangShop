@@ -65,10 +65,10 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [:D] Commit: `Implement unsubscribe function in Notification controller.`
     -   [ ] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
-    -   [ ] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
-    -   [ ] Commit: `Implement notify function in Notification service to notify each Subscriber.`
-    -   [ ] Commit: `Implement publish function in Program service and Program controller.`
-    -   [ ] Commit: `Edit Product service methods to call notify after create/delete.`
+    -   [:D] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
+    -   [:D] Commit: `Implement notify function in Notification service to notify each Subscriber.`
+    -   [:D] Commit: `Implement publish function in Program service and Program controller.`
+    -   [:D] Commit: `Edit Product service methods to call notify after create/delete.`
     -   [ ] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
 
 ## Your Reflections
@@ -77,6 +77,11 @@ This is the place for you to write reflections:
 ### Mandatory (Publisher) Reflections
 
 #### Reflection Publisher-1
+1. As far as i know, it can be done without an interface, or trait as it's called here in rust. So far, here in BambangShop we only have a single kind of product and a single kind of subscriber. It wouldn't really matter. But if later on there are different kinds of subscribers like premium tiers or whatnot, it would be better to use interfaces so it can be written in a simpler way.  
+
+2. I think it's possible. Turns out Vec can grow automatically when the number of data exceeds it's size, so no need to worry about that. the only thing in favor of using DashMap i can think of is performance, as using Vec would need to iterate through the whole thing to find a particular content unlike Maps which are generally faster because it hashes instead.
+
+3. Not gonna lie, i'm confused by this question. I was under the impression that the singleton pattern means there's that singular instance inside a class that can be accessed by any instance of that class. and this DashMap fits that description. So asking if we still need DashMap or if we can implement the Singleton pattern instead, which implies only one can be chosen, makes me confused as i think both are implemented already. My lack of understanding aside, we probably still need DashMap to make it thread safe.
 
 #### Reflection Publisher-2
 
